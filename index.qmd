@@ -27,10 +27,10 @@ import seaborn as sns
 ## GENERAR Y CARGAR DATOS
 
 ```{python}
-from sklearn.datasets import make_classification
+df = pd.read_csv("data/1.-mpceip_deeco_exportaciones_eeuu_2024_01csv", encoding="latin1")
 
 # Generar dataset ficticio
-X, y = make_classification(n_samples=1000, n_features=5, 
+X, y = df(n_samples=1000, n_features=5, 
                            n_informative=3, n_redundant=0, 
                            random_state=42)
 
@@ -118,7 +118,7 @@ from sklearn.preprocessing import StandardScaler
 ### CARGAR DATASET
 
 ```{python}
-data = load_breast_cancer()
+data = pd.read_csv("data/1.-mpceip_deeco_exportaciones_eeuu_2024_01csv", encoding="latin1")
 #data
 X = data.data #columnas
 y = data.target #filas
@@ -174,7 +174,7 @@ ConfusionMatrixDisplay.from_predictions(y_test,y_pred)
 ### CALSIFICACION CONN PIPE
 
 ```{python}
-data = load_breast_cancer()
+data = pd.read_csv("data/1.-mpceip_deeco_exportaciones_eeuu_2024_01csv", encoding="latin1")
 #data
 X = data.data #columnas
 y = data.target #filas
