@@ -1,6 +1,6 @@
 ---
-title: "PRACTICAS"
-author: "Diego Guanotasig"
+title: "Midterm"
+author: "Jorge Delgado"
 date: "04-10-25"
 format: html
 jupyter: python3
