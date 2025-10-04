@@ -1,7 +1,8 @@
 project:
   type: website
   output-dir: docs  # Cambiar de _site a docs
- 
+  resources:
+    - data/*.csv 
 website:
   title: "Machine Learning"
   navbar:
